@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body{
+    /* background: linear-gradient(to right,white,blue); */
+    background: linear-gradient(to right,white,rgb(71, 71, 146));
+    /* background-image: radial-gradient(circle,white,lightblue,blue); */
+}
+#head{
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 8px #FF0000;
+    font-size: 45px;
+}
+.candi{
+    background: linear-gradient(to right,rgb(255, 154, 72),rgb(250, 212, 109));
+}
+.player{
+    
+    text-shadow: 2px 2px 18px white;
+    
+    font-family: 'Nunito', sans-serif;  
+}
+
+/* Small devices (landscape phones, 576px and up) */
+

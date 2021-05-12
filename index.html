@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Voting-Machine</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center p-sm-5" id="head">Who will be the ICC Batsmen of the year ?</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 my-sm-2 my-1 col-12">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://static.abplive.com/wp-content/uploads/2020/04/03164323/Virat-Kohli.jpg?impolicy=abp_images&imwidth=1200"
+                            alt="Card image" style="width:100%;height: 300px;">
+                        <div class="card-body text-center candi">
+                            <h4 class="card-title player">Virat Kohli</h4>
+                            <button class="btn btn-primary btn-lg " id="vote">Vote</button>
+                            <div class="progress my-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-sm-2 my-1 col-12">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://images.newindianexpress.com/uploads/user/imagelibrary/2020/11/1/w1200X800/Rohit_Sharma_PTI_Image.jpg"
+                            alt="Card image" style="width:100%;height: 300px;">
+                        <div class="card-body text-center candi">
+                            <h4 class="card-title player">Rohit Sharma</h4>
+                            <button class="btn btn-primary btn-lg" id="vote">Vote</button>
+                            <div class="progress my-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 my-sm-2 my-1 col-12">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.cricxtasy.com/wp-content/uploads/2020/12/Babar-Azam.jpg" alt="Card image"
+                            style="width:100%;height: 300px;">
+                        <div class="card-body text-center candi">
+                            <h4 class="card-title player">Babar Azam</h4>
+                            <button class="btn btn-primary btn-lg" id="vote">Vote</button>
+                            <div class="progress my-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-sm-2 my-1 col-12">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://c.ndtvimg.com/2020-05/cp35n5fg_ross-taylor-celebrates-odi-afp_625x300_01_May_20.jpg"
+                            alt="Card image" style="width:100%;height: 300px;">
+                        <div class="card-body text-center candi">
+                            <h4 class="card-title player">Ross Taylor</h4>
+                            <button class="btn btn-primary btn-lg" id="vote">Vote</button>
+                            <div class="progress my-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 my-sm-2 my-1 col-12">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://images.newindianexpress.com/uploads/user/imagelibrary/2020/8/27/w1200X800/Aaron_Finch_PTI.jpg"
+                            alt="Card image" style="width:100%;height: 300px;">
+                        <div class="card-body text-center candi">
+                            <h4 class="card-title player">Aaron Finch</h4>
+                            <button class="btn btn-primary btn-lg" id="vote">Vote</button>
+                            <div class="progress my-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-sm-2 my-1 col-12">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://pbs.twimg.com/profile_images/1141735620416593922/9TQfq331.jpg" alt="Card image"
+                            style="width:100%;height: 300px;">
+                        <div class="card-body text-center candi">
+                            <h4 class="card-title player">Jonny Bairstow</h4>
+                            <button class="btn btn-primary btn-lg" id="vote">Vote</button>
+                            <div class="progress my-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 my-sm-2 my-1 col-12">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202104/fakharzamansavpak2ndodi_1200x768.jpeg?2FSAvsewaMoYRFhDgpFkJpa5ZKbMShDW&size=770:433"
+                            alt="Card image" style="width:100%;height: 300px;">
+                        <div class="card-body text-center candi">
+                            <h4 class="card-title player">Fakhar Zaman</h4>
+                            <button class="btn btn-primary btn-lg" id="vote">Vote</button>
+                            <div class="progress my-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-sm-2 my-1 col-12">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://www.cricxtasy.com/wp-content/uploads/2020/07/skysports-shai-hope.jpg"
+                            alt="Card image" style="width:100%;height: 300px;">
+                        <div class="card-body text-center candi">
+                            <h4 class="card-title player">Shai Hope</h4>
+                            <button class="btn btn-primary btn-lg" id="vote">Vote</button>
+                            <div class="progress my-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 my-sm-2 my-1 col-12">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://drytickets.com.au/assets/upload/750/450/60/celebrities/221-francois-du-plessis.jpg"
+                            alt="Card image" style="width:100%;height: 300px;">
+                        <div class="card-body text-center candi">
+                            <h4 class="card-title player">Francois du Plessis</h4>
+                            <button class="btn btn-primary btn-lg" id="vote">Vote</button>
+                            <div class="progress my-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 my-sm-2 my-1 col-12">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://img1.hscicdn.com/image/upload/f_auto/lsci/db/PICTURES/CMS/302700/302721.4.jpg"
+                            alt="Card image" style="width:100%;height: 300px;">
+                        <div class="card-body text-center candi">
+                            <h4 class="card-title player">David Warner</h4>
+                            <button class="btn btn-primary btn-lg" id="vote">Vote</button>
+                            <div class="progress my-2">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
