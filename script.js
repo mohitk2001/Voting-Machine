@@ -62,7 +62,7 @@ $(document).ready(()=>{
             vote_p:0
         }
 ];
-let precent;
+let precentage;
 $("button").click(function(){
     total_vote++;
     
@@ -79,11 +79,11 @@ $("button").click(function(){
     });
     
    console.log(votedatabase[player-1].name);
-   precent=(votedatabase[player-1].vote/total_vote)*100;
+   precentage=(votedatabase[player-1].vote/total_vote)*100;
   // precent=precent.toFixed(2);
-   console.log(precent);
+   console.log(precentage);
    console.log(total_vote);
-    $(this).next().children().css({"width": `${precent}%`});
+    $(this).next().children().css({"width": `${precentage}%`});
 });
 
 
