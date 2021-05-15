@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://image.shutterstock.com/image-vector/hand-voting-ballot-box-icon-260nw-1342666157.jpg"
+        type="image/x-icon">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -27,9 +30,11 @@
                             <h4 class="card-title player">Virat Kohli</h4>
                             <button class="btn btn-primary btn-lg " id="virat" value="1">Vote</button>
                             <div class="progress my-2">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated"  style="width:0%"></div>
-                            </div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%" id="virat_prog">
+                                    <span id="virat_v">0</span></div>
 
+                            </div>
+                            <h2 id="virat_count"></h2>
                         </div>
                     </div>
                 </div>
@@ -42,9 +47,10 @@
                             <h4 class="card-title player">Rohit Sharma</h4>
                             <button class="btn btn-primary btn-lg" id="rohit" value="2">Vote</button>
                             <div class="progress my-2">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%;" id="rohit_prog">
+                                    <span id="rohit_v">0</span></div>
                             </div>
-
+                            <h2 id="rohit_count"></h2>
                         </div>
                     </div>
                 </div>
@@ -57,11 +63,12 @@
                             style="width:100%;height: 300px;">
                         <div class="card-body text-center candi">
                             <h4 class="card-title player">Babar Azam</h4>
-                            <button class="btn btn-primary btn-lg" id="babar"value="3">Vote</button>
+                            <button class="btn btn-primary btn-lg" id="babar" value="3">Vote</button>
                             <div class="progress my-2">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%" id="babar_prog">
+                                    <span id="babar_v">0</span></div>
                             </div>
-
+                            <h2 id="babar_count"></h2>
                         </div>
                     </div>
                 </div>
@@ -72,11 +79,12 @@
                             alt="Card image" style="width:100%;height: 300px;">
                         <div class="card-body text-center candi">
                             <h4 class="card-title player">Ross Taylor</h4>
-                            <button class="btn btn-primary btn-lg" id="ross"value="4">Vote</button>
+                            <button class="btn btn-primary btn-lg" id="ross" value="4">Vote</button>
                             <div class="progress my-2">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%" id="ross_prog">
+                                    <span id="ross_v">0</span></div>
                             </div>
-
+                            <h2 id="ross_count"></h2>
                         </div>
                     </div>
                 </div>
@@ -89,11 +97,12 @@
                             alt="Card image" style="width:100%;height: 300px;">
                         <div class="card-body text-center candi">
                             <h4 class="card-title player">Aaron Finch</h4>
-                            <button class="btn btn-primary btn-lg" id="finch"value="5">Vote</button>
+                            <button class="btn btn-primary btn-lg" id="finch" value="5">Vote</button>
                             <div class="progress my-2">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%" id="aaron_prog">
+                                    <span id="aaron_v">0</span></div>
                             </div>
-
+                            <h2 id="aaron_count"></h2>
                         </div>
                     </div>
                 </div>
@@ -104,11 +113,12 @@
                             style="width:100%;height: 300px;">
                         <div class="card-body text-center candi">
                             <h4 class="card-title player">Jonny Bairstow</h4>
-                            <button class="btn btn-primary btn-lg" id="bairstow"value="6">Vote</button>
+                            <button class="btn btn-primary btn-lg" id="bairstow" value="6">Vote</button>
                             <div class="progress my-2">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%" id="jonny_prog">
+                                    <span id="jonny_v">0</span></div>
                             </div>
-
+                            <h2 id="jonny_count"></h2>
                         </div>
                     </div>
                 </div>
@@ -121,11 +131,12 @@
                             alt="Card image" style="width:100%;height: 300px;">
                         <div class="card-body text-center candi">
                             <h4 class="card-title player">Fakhar Zaman</h4>
-                            <button class="btn btn-primary btn-lg" id="vote">Vote </button>
+                            <button class="btn btn-primary btn-lg" id="vote" value="7">Vote </button>
                             <div class="progress my-2">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%" id="fakhar_prog">
+                                    <span id="fakhr_v">0</span></div>
                             </div>
-
+                            <h2 id="fakhr_count"></h2>
                         </div>
                     </div>
                 </div>
@@ -136,11 +147,12 @@
                             alt="Card image" style="width:100%;height: 300px;">
                         <div class="card-body text-center candi">
                             <h4 class="card-title player">Shai Hope</h4>
-                            <button class="btn btn-primary btn-lg" id="hope"value="8">Vote</button>
+                            <button class="btn btn-primary btn-lg" id="hope" value="8">Vote</button>
                             <div class="progress my-2">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%" id="shai_prog">
+                                    <span id="shai_v">0</span></div>
                             </div>
-
+                            <h2 id="shai_count"></h2>
                         </div>
                     </div>
                 </div>
@@ -153,11 +165,12 @@
                             alt="Card image" style="width:100%;height: 300px;">
                         <div class="card-body text-center candi">
                             <h4 class="card-title player">Francois du Plessis</h4>
-                            <button class="btn btn-primary btn-lg" id="faf"value="9">Vote</button>
+                            <button class="btn btn-primary btn-lg" id="faf" value="9">Vote</button>
                             <div class="progress my-2">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%" id="faf_prog">
+                                    <span id="faf_v">0</span></div>
                             </div>
-
+                            <h2 id="faf_count"></h2>
                         </div>
                     </div>
                 </div>
@@ -168,11 +181,12 @@
                             alt="Card image" style="width:100%;height: 300px;">
                         <div class="card-body text-center candi">
                             <h4 class="card-title player">David Warner</h4>
-                            <button class="btn btn-primary btn-lg" id="warner"value="10">Vote</button>
+                            <button class="btn btn-primary btn-lg" id="warner" value="10">Vote</button>
                             <div class="progress my-2">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%" id="david_prog">
+                                    <span id="warner_v">0</span></div>
                             </div>
-
+                            <h2 id="warner_count"></h2>
                         </div>
                     </div>
                 </div>
